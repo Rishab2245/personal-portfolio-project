@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color: purple;
+}
+
+a,.btn{
+    transition: all 300ms ease;
+}
+nav,.nav-links{
+    display: flex;
+}
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+.nav-links{
+    gap: 2rem;
+    font-size: 1.2rem;
+    list-style: none;
+ 
+}
+a{
+    text-decoration: none;
+    color: black; 
+    text-decoration-color: white;  
+   }
+a:hover{
+    text-decoration: underline;
+  color: grey;
+  text-underline-offset: 0.5rem;
+}
+.logo{
+    font-size: 2rem;
+    cursor: default;
+}
+.hamburger-links{
+    list-style: none;
+}
+@media (max-width:550px) {
+    #navbar{
+        display: none;
+    }
+    #hamburger-navbar{
+        display: flex;
+    }
+}
